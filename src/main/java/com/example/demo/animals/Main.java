@@ -19,4 +19,3 @@ public class Main {
         }
     }
 }
-    git config --global user.email dheerajsachan009
