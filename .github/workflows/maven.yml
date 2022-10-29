@@ -28,11 +28,10 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn build
-      #mvn -B package --file pom.xml
+      run: mvn -B package --file pom.xml
 
     - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: 0156972/dheerajprivaterepo
         registry: docker.io
