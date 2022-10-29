@@ -31,7 +31,8 @@ jobs:
       run: mvn -B package --file pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
-
+  publish:
+    - needs: build
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v5
