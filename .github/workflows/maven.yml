@@ -28,7 +28,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvnw build
+      #mvn -B package --file pom.xml
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v5
