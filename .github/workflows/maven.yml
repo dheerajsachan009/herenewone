@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvnw build
+      run: mvn build
       #mvn -B package --file pom.xml
 
     - name: Build and Push Docker Image
