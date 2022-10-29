@@ -6,6 +6,7 @@ public class Animal {
 
     public Animal(int legs) {
         this.legs = legs;
+        System.out.println("here");
     }
 
     public void howManyLegs() {
