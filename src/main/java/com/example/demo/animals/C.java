@@ -8,7 +8,7 @@ public class C {
     }
 
     public static int display() {
-
+        System.out.println("hello");
         int c = B.changeValue();
         return c;
     }
